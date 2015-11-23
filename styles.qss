@@ -1,0 +1,55 @@
+QMainWindow {
+    background: #dddddd;
+}
+
+QFrame {
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-bottom: 4px solid #ccc;
+}
+
+QLabel, QTextEdit, QLineEdit {
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+QTextEdit#frame_info_label {
+    border: 0;
+    font-size: 18px;
+    color: #ccc;
+}
+
+QFrame#puzzle_board {
+    border-radius: 0;
+    border: 1px solid #444;
+}
+
+QFrame.puzzle_grid {
+    border-radius: 0;
+    border: 1px solid #eee;
+}
+
+QLineEdit.puzzle_input {
+    border: 1px solid #eee;
+    font-size: 22px;
+}
+
+QPushButton#submit_button {
+    background: #55bb88;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    font-size: 22px;
+}
+
+QPushButton#submit_button:hover {
+    border: 2px solid #339955;
+}
+
+QPushButton#submit_button:pressed {
+    border: 1px solid #339955;
+    border-bottom: 1px solid #55bb88;
+    border-top: 3px solid #339955;
+}
