@@ -3,8 +3,7 @@
 def calculate(values):
     #print values
 
-    validate(values)
-
+    print validate(values)
 
 
 
@@ -16,15 +15,27 @@ def validate(values):
     for grid in values:
         count = count + 1
         print "count %d" % count
-        print grid
+        gridErrors = []
 
-        for item in grid:
-            print item
+        for square in grid:
+            squareErrors = []
+            print square
 
-            if item != "":
+            if square != "":
 
                 try:
-                    if int(item) >9 or int(item) <0:
-                        errors.append("Number must be between 1 and 9")
+                    if int(square) >9 or int(square) <0:
+                        squareErrors.append("Number must be between 1 and 9")
                 except ValueError:
-                    print "This is an invalid input!"
+                    squareErrors.append("This is an invalid input")
+            gridErrors.append(squareErrors)
+        errors.append(gridErrors)
+
+    return errors
+
+            # #if square == " ":
+            #             try:
+            #                 if int(square) >9 or int(square) <0:
+            #                     errors.append("Number must be between 1 and 9")
+            #             except ValueError:
+            #                 print "This is an invalid input!"

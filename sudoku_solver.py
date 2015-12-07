@@ -138,7 +138,7 @@ class Board(QtGui.QFrame):
             blockValues = []
 
             for numberInput in numberInputs:
-                print numberInput
+                
                 blockValues.append(numberInput.text())
 
             values.append(blockValues)
