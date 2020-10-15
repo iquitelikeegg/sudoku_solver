@@ -37,7 +37,7 @@ class Wrapper(QtGui.QFrame):
 
     def initWrapper(self):
 
-        print "Begin"
+        print("Begin")
 
         self.board = Board(self)
         self.createLabels()
